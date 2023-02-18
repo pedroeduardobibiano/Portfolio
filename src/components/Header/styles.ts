@@ -6,6 +6,9 @@ export const HeaderContainer = styled.header`
         background-color: ${(props) => props.theme.colors["Background-N1"]};
         max-width: 100%;
         height: 4rem;
+
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
 `;
 
 export const LinkBox = styled.div`
@@ -43,7 +46,7 @@ export const LinkContainer = styled.div`
     padding: 1rem 3rem;
     cursor: pointer;
 
-
+    font-size: 1.1rem;
     border-bottom: 1px solid transparent;
 
     :hover{

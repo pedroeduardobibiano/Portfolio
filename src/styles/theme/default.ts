@@ -14,11 +14,11 @@ export const defaultTheme = {
 
 export const defaultThemeDark = {
     colors: {
-        "Background-N1": "#353B3C",
-        "Background-N2": "#846A6A",
-        "Background-N3": "#A2999E",
+        "Background-N1": "#1B1B1E",
+        "Background-N2": "#111",
+        "Background-N3": "#141920",
 
-        "Background-Theme": "#946A6A",
+        "Background-Theme": "#373F51",
 
         "Fonte-F1": "#FAFAFA",
         "Fonte-F2": "#EAE0D5",
