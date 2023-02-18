@@ -9,7 +9,8 @@ import { GlobalStyle } from "./styles/theme/global"
 
 
 interface PropsTheme {
-  HandleChangeTheme: ()=> void
+  HandleChangeTheme: () => void
+  theme: string
 }
 
 
@@ -26,7 +27,7 @@ export function App() {
     <ThemeProvider theme={theme === 'light' ? defaultTheme : defaultThemeDark}>
       <BrowserRouter>
         <GlobalStyle />
-        <Router HandleChangeTheme={HandleChangeTheme}/>
+        <Router HandleChangeTheme={HandleChangeTheme} theme={theme}/>
       </BrowserRouter>
     </ThemeProvider>
   )

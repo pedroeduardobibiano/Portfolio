@@ -5,13 +5,14 @@ import { Header } from "../components/Header";
 
 interface PropsTheme {
     HandleChangeTheme: () => void
+    theme: string
 }
 
-export function LayoutDefault({ HandleChangeTheme }: PropsTheme) {
+export function LayoutDefault({ HandleChangeTheme, theme }: PropsTheme) {
 
     return (
         <LayoutContainer>
-            <Header HandleChangeTheme={HandleChangeTheme} />
+            <Header HandleChangeTheme={HandleChangeTheme} theme={theme}/>
             <Outlet />
         </LayoutContainer>
     )
