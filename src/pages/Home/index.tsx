@@ -1,21 +1,23 @@
 import { HomeContent, HomeContainer, ImgContent, TextContent, TextTitle } from "./styles";
 
 import Photo from '../../assets/Icons/Eu.webp'
+import { AboutMe } from "../AboutMe";
 
 export function Home() {
     return (
+
         <HomeContainer>
-             <TextTitle>{`[...Sobre mim]`}</TextTitle>
+            <TextTitle>{`Olá`}</TextTitle>
             <HomeContent>
-               
+
                 <TextContent>
                     <pre>{`
     var presentation= [
         {
             Name: “Pedro Eduardo Bibiano”,
-
+            
             Course: “Computer Science”
-
+            
             Skills:[“JavaScript”, “ReactJS”, ”TypeScript”]
             
             Profession: “front-end developer”
@@ -30,5 +32,6 @@ export function Home() {
                 </ImgContent>
             </HomeContent>
         </HomeContainer>
+
     )
 }

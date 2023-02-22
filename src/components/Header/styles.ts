@@ -42,16 +42,39 @@ export const HeaderGrade = styled.div`
         }
 `;
 
+
+
+
 export const LinkContainer = styled.div`
-    padding: 1rem 3rem;
+    padding: 1rem 0.8rem;
     cursor: pointer;
+
 
     font-size: 1.1rem;
     border-bottom: 1px solid transparent;
 
-    :hover{
-        border-bottom: 1px solid ${(props) => props.theme.colors["Fonte-F1"]};
+ 
+
+    a{
+        padding: 1rem 3rem;
+        justify-content:center ;
+        color: ${(props) => props.theme.colors["Fonte-F1"]};
+
+        &.active {
+            border-bottom: 1px solid ${(props) => props.theme.colors["Fonte-F1"]};
+        }
+        
+
     }
+    &:hover{
+    border-bottom: 1px solid ${(props) => props.theme.colors["Fonte-F1"]};
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+}
+
+    
 `
 
 
