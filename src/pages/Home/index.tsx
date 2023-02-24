@@ -1,7 +1,6 @@
 import { HomeContent, HomeContainer, ImgContent, TextContent, TextTitle } from "./styles";
 
 import Photo from '../../assets/Icons/Eu.webp'
-import { AboutMe } from "../AboutMe";
 
 export function Home() {
     return (

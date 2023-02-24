@@ -11,7 +11,7 @@ export const AboutMeContainer = styled.div`
         max-width: 1420px;
          height: 100%;
 
-         margin-top: 5rem;
+         margin-top: 3.5rem;
 
 
          display:grid;
@@ -41,11 +41,26 @@ h4{
 
     p{
         margin-top: 1rem;
-        max-width: 20rem;
-        text-align: start;
+        max-width: 24rem;
+        text-align: justify;
 
         font-size:1rem;
         font-weight: normal;
+    }
+
+    button{
+        margin-top: 1.125rem;
+        margin-bottom: 1.125rem;
+        background-color:red;
+        border:none;
+        width: 10rem;
+        height: 2.3rem;
+        background-color: ${({theme}) => theme.colors["Background-N1"]};
+        color: ${({theme}) => theme.colors["Fonte-F2"]};
+        border-radius: 6px;
+
+        font-size: 1.2rem;
+        border: 2px solid ${({theme}) => theme.colors["Fonte-F1"]};
     }
 `
 

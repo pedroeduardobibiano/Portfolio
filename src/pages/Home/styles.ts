@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-    background-color: ${({ theme }) => theme.colors["Background-N1"]};
+    background-color: ${({ theme }) => theme.colors["Background-Theme"]};
     margin: 0 auto;
     max-width: 1420px;
     height: 100%;
-    margin-top: 5rem;
-    box-shadow: rgba(173, 181, 189, 0.1) -5px 5px, rgba(173, 181, 189, 0.1) -10px 10px, rgba(173, 181, 189, 0.1) -15px 15px, rgba(173, 181, 189, 0.1) -20px 20px, rgba(173, 181, 189, 0.01) -25px 25px;
-    height: 70vh;
+    margin-top: 3.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    height: 70vh;
 
     border-radius: 70px 250px 70px 250px;
 

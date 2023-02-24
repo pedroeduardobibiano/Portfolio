@@ -3,6 +3,8 @@ import { AboutMeContainer, ContentMain, ImgContent, TitleContent } from "./style
 import Imagem from '../../assets/Icons/Eu.webp'
 import { Skill } from "./Skill";
 
+import Curriculo from '../../assets/docs/Curriculo-2023.pdf'
+
 export function AboutMe() {
     return (
         <ContentMain>
@@ -13,12 +15,13 @@ export function AboutMe() {
                     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, consequuntur atque. Molestiae reprehenderit blanditiis itaque porro modi, amet aspernatur, eveniet veritatis esse eius reiciendis dicta sequi impedit culpa debitis atque.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque doloribus commodi debitis tempore, omnis adipisci nam? Cumque, alias fuga tenetur accusantium perspiciatis distinctio similique numquam, quidem blanditiis tempore repudiandae.
                     </p>
-                    <button>Curriculo</button>
+                    <a href={Curriculo} target="_blank"><button>Curriculo</button></a>
+
                 </TitleContent>
-                <ImgContent><img src={Imagem} alt="" /></ImgContent>
+                <ImgContent><img src={Imagem} alt=""  /></ImgContent>
             </AboutMeContainer>
-            
-            <Skill/>
+
+            <Skill />
         </ContentMain>
     )
 }
