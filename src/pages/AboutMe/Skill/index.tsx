@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { ButtonContainer, ButtonContent, HabilitsContent } from "./styles";
+import  { AllHTMLAttributes, ReactNode, useState } from "react";
+import { ButtonContainer, ButtonContent, HabilitsContent, TextContent } from "./styles";
 
 import javascript from '../../../assets/Icons/javascript.svg'
 import html from '../../../assets/Icons/html.svg'
@@ -11,71 +11,118 @@ export const data = [
     {
         id: 1,
         TecnologiaHTML: 'HTML',
-        textoHtml: 'html blablabla',
+        textoHTML: 'html blablabla',
     },
     {
         id: 2,
         TecnologiaCSS: 'CSS',
-        textoCss: 'css blabla bla',
+        textoCSS: 'css blabla bla',
     },
     {
         id: 3,
-        TecnologiaJava: 'JavaScript',
-        textoJava: 'java bla bla ',
+        TecnologiaJavaScript: 'JavaScript',
+        textoJavaScript: 'java bla bla ',
     },
     {
         id: 4,
-        TecnologiaReact: 'ReactJS',
-        textoReact: 'React bla bla ',
+        TecnologiaReactJS: 'ReactJS',
+        textoReactJS: 'React bla bla ',
     },
     {
         id: 5,
-        TecnologiaType: 'TypeScript',
-        textoTS: 'Type bla bla ',
+        TecnologiaTypeScript: 'TypeScript',
+        textoTypeScript: 'Type bla bla ',
     },
 ]
+
+
+export interface Tecnologies {
+    id: number,
+    TecnologiaHTML: string,
+    TecnologiaCSS: string,
+    TecnologiaJavaScript: string,
+    TecnologiaReactJS: string,
+    TecnologiaTypeScript: string,
+    textoHTML: string;
+    textoCSS: string;
+    textoJavaScript: string;
+    textoReactJS: string;
+    textoTypeScript: string;
+}
+
+interface PropsTech {
+    tech: Tecnologies
+}
 
 
 
 export function Skill() {
 
-    const [task, setTask] = useState<any>()
+    const [task, setTask] = useState<PropsTech[] | ReactNode>([])
 
-    function handleClickHTML() {
+    function handleClickHtml() {
         const textFillHtml = data.map((search) => {
-            return <h1>{search.textoHtml}</h1>
+            return (
+                <>
+                    <h1>{search.TecnologiaHTML}</h1>
+                    <h3>{search.textoHTML}</h3>
+                </>
+            )
         })
         setTask(textFillHtml)
     }
 
-
     function handleClickCss() {
-        const textFillCSS = data.map((search) => {
-            return <h1>{search.textoCss}</h1>
+        const textFillCss = data.map((search) => {
+            return (
+                <>
+                    <h1>{search.TecnologiaCSS}</h1>
+                    <h3>{search.textoCSS}</h3>
+                </>
+            )
         })
-        setTask(textFillCSS)
+        setTask(textFillCss)
     }
 
     function handleClickJS() {
-        const textFillJs = data.map((search) => {
-            return <h1>{search.textoJava}</h1>
+        const textFillJS = data.map((search) => {
+            return (
+                <>
+                    <h1>{search.TecnologiaJavaScript}</h1>
+                    <h3>{search.textoJavaScript}</h3>
+
+                </>
+            )
         })
-        setTask(textFillJs)
+        setTask(textFillJS)
     }
 
     function handleClickReact() {
         const textFillReact = data.map((search) => {
-            return <h1>{search.textoReact}</h1>
+            return (
+                <>
+                    <h1>{search.TecnologiaReactJS}</h1>
+                    <h3>{search.textoReactJS}</h3>
+                </>
+            )
         })
         setTask(textFillReact)
     }
 
     function handleClickJTS() {
-        const textFillJs = data.map((search) => {
-            return <h1>{search.textoTS}</h1>
+        const textFillTS = data.map((search) => {
+            return (
+                <>
+                    <h1>{search.TecnologiaTypeScript}</h1>
+                    <h3>{search.textoTypeScript}</h3>
+
+                </>)
         })
-        setTask(textFillJs)
+        setTask(textFillTS)
     }
+
+
+
 
     return (
         <HabilitsContent>
@@ -83,25 +130,25 @@ export function Skill() {
             <ButtonContent>
 
                 <ButtonContainer>
-                    <button className="btn btn1" onClick={handleClickHTML}>
+                    <button onClick={handleClickHtml}>
                         <img src={html} alt="" />
-                        </button>
+                    </button>
 
                     <button onClick={handleClickCss}>
                         <img src={css} alt="" />
-                        </button>
+                    </button>
 
                     <button onClick={handleClickJS}>
                         <img src={javascript} alt="" />
-                        </button>
+                    </button>
 
                     <button onClick={handleClickReact}>
                         <img src={react} alt="" />
-                        </button>
+                    </button>
 
                     <button onClick={handleClickJTS}>
                         <img src={typescript} alt="" />
-                        </button>
+                    </button>
 
 
 
@@ -112,7 +159,10 @@ export function Skill() {
 
             </ButtonContent>
 
-            <span>{task}</span>
+            <TextContent>
+                {task === undefined? "Selecione uma técnologia" : ""}
+                <span>{task}</span>
+            </TextContent>
 
 
         </HabilitsContent>

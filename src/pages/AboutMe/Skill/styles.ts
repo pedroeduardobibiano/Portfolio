@@ -44,3 +44,7 @@ export const ButtonContainer = styled.div`
         }
     }
 `;
+
+export const TextContent = styled.div`
+    
+`;
