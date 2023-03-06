@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const HabilitsContent = styled.div`
     width: 100%;
-    background-color:green;
+    background-color: ${({theme})=> theme.colors["header/Fotter"]};
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-radius: 10px;
 
-    background-color: ${({ theme }) => theme.colors["Background-Theme"]};
 
     height: 11rem;
     margin-top: 1rem;
@@ -32,7 +31,6 @@ export const ButtonContainer = styled.div`
 
     button{
         border: none;
-        background-color: ${({ theme }) => theme.colors["Background-N2"]};
         width: 5rem;
         height: 4rem;
         border-radius: 50%;
@@ -53,8 +51,10 @@ div{
     display: inline-block;
       margin: 0 0.5rem;
       
-      animation: fadeInRightBig; /* referring directly to the animation's @keyframe declaration */
+      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 1s; /* don't forget to set a duration! */
+      
+      
     }
 background-color:#fff;
 
@@ -95,9 +95,11 @@ export const TextsContent = styled.div`
 
     display: block;
       
-      animation: fadeInRightBig; /* referring directly to the animation's @keyframe declaration */
+      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 1s; /* don't forget to set a duration! */
       border-radius: 8px;
+
+      
 `;
 
 export const SkillContent = styled.div`
@@ -115,7 +117,6 @@ export const ContentButton = styled.div`
 
     button{
         border: none;
-        background-color: ${({ theme }) => theme.colors["Background-N2"]};
         width: 5rem;
         height: 4rem;
         border-radius: 50%;
@@ -137,19 +138,21 @@ export const ContentButton = styled.div`
 export const Title = styled.h1`
     display: block;
       
-      animation: fadeInRightBig; /* referring directly to the animation's @keyframe declaration */
+      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 1s; /* don't forget to set a duration! */
-    
-
       
 
+      
+    
 `
 
 export const SubTitle = styled.div`
     display: block;
     
-      animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 1s; /* don't forget to set a duration! */
+      
+
 
       font-size: 0.9rem;
       font-weight: normal;

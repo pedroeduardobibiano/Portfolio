@@ -1,4 +1,4 @@
-import { defaultTheme } from "../styles/theme/default";
+import { defaultTheme, defaultThemeDark } from "../styles/theme/default";
 
 type ThemeType = typeof defaultTheme
 

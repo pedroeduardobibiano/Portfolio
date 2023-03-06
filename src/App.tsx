@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ThemeProvider } from "styled-components"
+import { DefaultTheme, ThemeProvider } from "styled-components"
 
 import { BrowserRouter } from 'react-router-dom'
 
@@ -24,7 +24,7 @@ export function App() {
 
 
   return (
-    <ThemeProvider theme={theme === 'light' ? defaultTheme : defaultThemeDark}>
+    <ThemeProvider theme={theme === 'light' ? defaultThemeDark  : defaultTheme}>
       <BrowserRouter>
         <GlobalStyle />
         <Router HandleChangeTheme={HandleChangeTheme} theme={theme}/>

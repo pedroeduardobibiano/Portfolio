@@ -1,3 +1,7 @@
-export function Fotter(){
-    return(<h1>Fotter</h1>)
+import { FotterContainer } from "./styles";
+
+export function Fotter() {
+    return (
+        <FotterContainer>Desenvolvido por <pre> <a href="https://www.linkedin.com/in/pedro-eduardo-bibiano/" target="blank_">Pedro Eduardo</a> </pre> 👨‍💻</FotterContainer>
+    )
 }

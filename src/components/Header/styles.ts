@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const HeaderContainer = styled.header`
         display: flex;
         flex-direction: row;
-        background-color: ${(props) => props.theme.colors["Background-N1"]};
+        background-color: ${({theme})=> theme.colors["header/Fotter"]};
         max-width: 100%;
-        height: 4rem;
+        height: 5rem;
 
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 
@@ -46,7 +46,7 @@ export const HeaderGrade = styled.div`
 
 
 export const LinkContainer = styled.div`
-    padding: 1rem 0.8rem;
+    padding: 1.5rem 0.8rem;
     cursor: pointer;
 
 
@@ -56,7 +56,7 @@ export const LinkContainer = styled.div`
  
 
     a{
-        padding: 1rem 3rem;
+        padding: 1.5rem 3rem;
         justify-content:center ;
         color: ${(props) => props.theme.colors["Fonte-F1"]};
 

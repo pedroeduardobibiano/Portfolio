@@ -9,7 +9,14 @@ export const defaultTheme = {
         "Fonte-F1": "#342E37",
         "Fonte-F2": "#0A0908",
 
-    }as const 
+        "header/Fotter": "#fff",
+
+        "amarelo": "#FFB70D",
+        "azul": "#70B5E8",
+
+        "buttonHome": "#EAB883",
+
+    } as const
 };
 
 export const defaultThemeDark = {
@@ -23,5 +30,12 @@ export const defaultThemeDark = {
         "Fonte-F1": "#FAFAFA",
         "Fonte-F2": "#EAE0D5",
 
-    }as const 
+        "header/Fotter": "#151515",
+
+        "amarelo": "#FFB70D",
+        "azul": "#70B5E8",
+
+        "buttonHome": "#transaparent",
+
+    } as const
 };

@@ -18,7 +18,7 @@ export const AboutMeContainer = styled.div`
 
          grid-template-columns: repeat(2, 1fr);
 
-         background-color: ${({ theme }) => theme.colors["Background-Theme"]};
+         background-color: ${({ theme }) => theme.colors["header/Fotter"]};
 
          border-radius: 15px;
 
