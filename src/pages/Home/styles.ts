@@ -12,7 +12,7 @@ display:flex;
 justify-content:space-around;
 letter-spacing: 0.1rem;
 
-
+overflow:hidden;
 `
 
 
@@ -26,10 +26,16 @@ export const RightSide = styled.div`
   padding-top: 7rem;
 
   line-height: 4rem;
+
+  animation: slideInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+  flex: 1;
 `
 export const LeftSide = styled.div`
 flex: 1;
-
+animation: slideInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+  flex: 1;
 
 `
 
@@ -99,7 +105,6 @@ interface PropsVariant {
 export const ButtonsContainer = styled.div<PropsVariant>`
 
 
-background-color: ${({theme}) => theme.colors.buttonHome};
 
 a{
   color: inherit;
@@ -112,9 +117,7 @@ img{
   color: black;
 }
 
-:hover{
-  background-color:${({theme}) => theme.colors["Background-N1"]};
-}
+
 
 
 display:flex;

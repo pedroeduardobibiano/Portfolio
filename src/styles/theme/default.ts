@@ -14,7 +14,6 @@ export const defaultTheme = {
         "amarelo": "#FFB70D",
         "azul": "#70B5E8",
 
-        "buttonHome": "#EAB883",
 
     } as const
 };
@@ -34,8 +33,6 @@ export const defaultThemeDark = {
 
         "amarelo": "#FFB70D",
         "azul": "#70B5E8",
-
-        "buttonHome": "#transaparent",
 
     } as const
 };

@@ -10,6 +10,7 @@ export const HabilitsContent = styled.div`
 
     height: 11rem;
     margin-top: 1rem;
+    margin-bottom: 5rem;
 
 `
 
