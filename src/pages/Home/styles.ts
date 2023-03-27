@@ -104,20 +104,33 @@ interface PropsVariant {
 }
 export const ButtonsContainer = styled.div<PropsVariant>`
 
-
-
-a{
-  color: inherit;
+svg{
+display:flex;
+margin-left: 0.8rem;
 }
+
+a {
+    color: inherit;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
 
 img{
   width: 22px;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
-  color: black;
+  color: red;
+
 }
 
-
+:hover{
+  background-color:${({theme}) => theme.colors["hover-bg"]};
+  transition: 0.8s;
+}
 
 
 display:flex;

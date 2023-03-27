@@ -1,8 +1,8 @@
 import { ButtonsContainer, ButtonsMain, Description, HomeContainer, LeftSide, NameTitle, RightSide, Title, Titles } from "./styles";
 
 import programador from '../../assets/Icons/programador.png'
-import linkedin from '../../assets//Icons/linkedin.png'
-import git from '../../assets//Icons/github.png'
+import {GithubLogo} from 'phosphor-react'
+import {LinkedinLogo} from 'phosphor-react'
 
 export function Home() {
     return (
@@ -17,13 +17,13 @@ export function Home() {
 
                 <ButtonsMain>
                     <ButtonsContainer variant="amarelo">
-                        <img src={linkedin} alt="" />
-                        <a href="https://www.linkedin.com/in/pedro-eduardo-bibiano/" target="blank_">LinkedIn</a>
+                        
+                        <a href="https://www.linkedin.com/in/pedro-eduardo-bibiano/" target="blank_"><LinkedinLogo size={23}/> LinkedIn</a>
                     </ButtonsContainer>
 
                     <ButtonsContainer variant="azul">
-                        <img src={git} alt="" />
-                        <a href="https://github.com/pedroeduardobibiano" target="blank_">Gihub</a>
+                       
+                        <a href="https://github.com/pedroeduardobibiano" target="blank_"><GithubLogo size={23}/> Gihub</a>
                     </ButtonsContainer>
                 </ButtonsMain>
 

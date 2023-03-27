@@ -120,10 +120,10 @@ margin-left: 0.8rem;
   }
 
   gap: 0.3rem;
-  background-color: ${({ theme }) => theme.colors.buttonHome};
 
   :hover {
-    background-color: ${({ theme }) => theme.colors["Background-N1"]};
+    background-color: ${({theme}) => theme.colors["hover-bg"]};
+    transition: 0.8s;
   }
 
   display: flex;

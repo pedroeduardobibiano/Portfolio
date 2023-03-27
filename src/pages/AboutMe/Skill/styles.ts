@@ -1,171 +1,146 @@
 import styled from "styled-components";
 
 export const HabilitsContent = styled.div`
-    width: 100%;
-    background-color: ${({theme})=> theme.colors["header/Fotter"]};
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-radius: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
 
+  height: 11rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  overflow: hidden;
 
-    height: 11rem;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-
-`
+  background-color: ${({ theme }) => theme.colors["header/Fotter"]};
+  padding: 1rem;
+`;
 
 export const ButtonContent = styled.div`
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 6rem;
-    margin-top: 1rem;
-
-    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 6rem;
+  margin-top: 1rem;
 `;
 
 export const ButtonContainer = styled.div`
-   display:flex;
-   gap: 1rem;
-   align-items:center;
-   justify-content:center;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 
+  button {
+    border: none;
+    width: 5rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    button{
-        border: none;
-        width: 5rem;
-        height: 4rem;
-        border-radius: 50%;
-        display:flex ;
-        align-items:center;
-        justify-content:center;
-        
-
-        &:hover{
-            background-color: rgba(247, 247, 249, 0.2);
-         transition: 01s;
-        }
+    &:hover {
+      background-color: ${({ theme }) => theme.colors["hover-bg"]};
+      transition: 0.8s;
     }
+  }
 `;
 
 export const TextContent = styled.div`
-div{
+  div {
     display: inline-block;
-      margin: 0 0.5rem;
-      
-      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 1s; /* don't forget to set a duration! */
-      
-      
-    }
-background-color:#fff;
+    margin: 0 0.5rem;
 
-
-    
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
 `;
-
 
 export const TitleNoPointer = styled.div`
- font-size: 1.5rem;
- margin: 0.5rem 1rem;
- 
- font-weight: normal;
- font-size: 1.3rem;
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem;
 
- 
-`
-
-
+  font-weight: normal;
+  font-size: 1.3rem;
+`;
 
 export const TitleGlob = styled.div`
-    padding:  1rem 3rem;
-    font-size: 1.8rem;
-    font-family: roboto mono;
+  font-size: 1.8rem;
+  font-family: roboto mono;
 
-    font-weight: bold;
+  font-weight: bold;
+
+  margin-bottom: 1rem;
 `;
-export const TecContent = styled.div`
-    
-    `;
+export const TecContent = styled.div``;
 export const TextsContent = styled.div`
-    padding: 0.5rem 1rem;
-    
-    background-color: rgba(247, 247, 249, 0.2);
-    margin: 0.7rem;
+  padding: 0.5rem 1rem;
 
-    font-size: 0.7rem;
+  background-color: rgba(247, 247, 249, 0.02);
+  margin: 0.7rem;
 
-    display: block;
-      
-      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 1s; /* don't forget to set a duration! */
-      border-radius: 8px;
+  font-size: 0.7rem;
 
-      
+  display: block;
+
+  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+  border-radius: 8px;
+
+  background-color: ${({ theme }) => theme.colors["Background-N1"]};
 `;
 
-export const SkillContent = styled.div`
-`
-
+export const SkillContent = styled.div``;
 
 export const ContentButton = styled.div`
-    display:flex;
-    justify-content:space-around;
+  display: flex;
+  justify-content: space-between;
 
-    width: 700px;
+  width: 680px;
 
-    align-items:center;
-    
+  align-items: flex-start;
 
-    button{
-        border: none;
-        width: 5rem;
-        height: 4rem;
-        border-radius: 50%;
-        display:flex ;
-        align-items:center;
-        justify-content:center;
-    
+  button {
+    width: 5rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        &:hover{
-            background-color: rgba(247, 247, 249, 0.2);
-         transition: 01s;
-         img{
-            width: 3.3rem;
-        }
-        }
+    background-color: transparent;
+
+    &:hover {
+      background-color: ${({ theme }) => theme.colors["hover-bg"]};
+      transition: 0.8s;
+      img {
+        width: 3.3rem;
+      }
     }
+  }
 `;
 
 export const Title = styled.h1`
-    display: block;
-      
-      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 1s; /* don't forget to set a duration! */
-      
+  display: block;
 
-      
-    
-`
+  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+`;
 
 export const SubTitle = styled.div`
-    display: block;
-    
-      animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 1s; /* don't forget to set a duration! */
-      
+  display: block;
 
+  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
 
-      font-size: 0.9rem;
-      font-weight: normal;
+  font-size: 0.9rem;
+  font-weight: normal;
 
-      h3{
-        font-weight:normal;
-        margin-top: 0.2rem;
-      }
+  h3 {
+    font-weight: normal;
+    margin-top: 0.2rem;
+  }
 
-      h1{
-        font-family: roboto mono;
-        font-size: 1.8rem;
-      }
-      
-`
+  h1 {
+    font-family: roboto mono;
+    font-size: 1.8rem;
+  }
+`;

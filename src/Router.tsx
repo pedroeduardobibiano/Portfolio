@@ -1,6 +1,5 @@
 import { Routes } from 'react-router-dom'
 import { Route } from 'react-router'
-import { Header } from './components/Header'
 import { Home } from './pages/Home'
 import { LayoutDefault } from './layout/Layout'
 import { AboutMe } from './pages/AboutMe'

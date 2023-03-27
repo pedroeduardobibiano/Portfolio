@@ -1,4 +1,3 @@
-import { ButtonsContainer, ButtonsMain } from "../../Home/styles";
 import {
   ButtonsContainerPr,
   ButtonsMainPr,
@@ -16,9 +15,9 @@ interface Projects {
   img: string;
   titulo: string;
   descrição: string;
-  Tecnologia: string;
-  LinkGit: string;
-  LinkProject: string;
+  tecnologia: string;
+  linkGit: string;
+  linkProject: string;
 }
 
 interface ProjectsProps {
@@ -35,20 +34,20 @@ export function BoxCard({ project }: ProjectsProps) {
           </Imagens>
           <h3>{project.titulo}</h3>
           <p>{project.descrição}</p>
-          <span>Tenologias usadas neste projeto: {project.Tecnologia}</span>
+          <span>Tenologias usadas neste projeto: {project.tecnologia}</span>
 
           <ButtonsMainPr>
             <ButtonsContainerPr variant="amarelo">
-              <a href={project.LinkProject} target="_blank">
+              <a href={project.linkProject} target="_blank">
                 <Link size={21} />
                 Vizualizar
               </a>
             </ButtonsContainerPr>
 
             <ButtonsContainerPr variant="azul">
-              <a href={project.LinkGit} target="_blank">
+              <a href={project.linkGit} target="_blank">
                 <GithubLogo size={21} />
-                Link do Git
+                Repositório
               </a>
             </ButtonsContainerPr>
           </ButtonsMainPr>
