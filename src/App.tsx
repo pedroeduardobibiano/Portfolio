@@ -24,7 +24,7 @@ export function App() {
 
 
   return (
-    <ThemeProvider theme={theme === 'light' ? defaultThemeDark  : defaultTheme}>
+    <ThemeProvider theme={theme === 'light' ? defaultThemeDark : defaultTheme}>
       <BrowserRouter>
         <GlobalStyle />
         <Router HandleChangeTheme={HandleChangeTheme} theme={theme}/>
