@@ -33,8 +33,8 @@ export const projects = [
     img: "ToDo.png",
     titulo: "ToDo-Task",
     descrição: "Este projeto se baseia em um 'task list', onde o usuário cria uma tarefa e controla o estado da mesma, podendo criar, excluir ou dar um check. As tarefas criadas ficam logo abaixo, e após dado o check elas ficam riscadas ao meio para fácil identificação, de qual tarefa já foi concluída.",
-    tecnologia: "html, css, typeScript, styled-componets",
+    tecnologia: "HTML, CSS, TypeScript, Styled-Componets",
     linkGit: "https://github.com/pedroeduardobibiano/ToDo-Task.git",
-    linkProject: "https://github.com/pedroeduardobibiano/ToDo-Task.git",
+    linkProject: "https://front-todo.netlify.app/",
   },
 ];

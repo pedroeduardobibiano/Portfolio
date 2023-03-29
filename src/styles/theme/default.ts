@@ -15,6 +15,8 @@ export const defaultTheme = {
     azul: "#70B5E8",
 
     "hover-bg": "rgba(170, 204, 170, 0.8)",
+
+    "bg-Menu": "rgba(170, 204, 170, 0.97)",
   } as const,
 };
 
@@ -35,5 +37,7 @@ export const defaultThemeDark = {
     azul: "#70B5E8",
 
     "hover-bg": "rgba(41, 41, 41, 0.8)",
+
+    "bg-Menu": "rgba(41, 41, 41, 0.99)",
   } as const,
 };

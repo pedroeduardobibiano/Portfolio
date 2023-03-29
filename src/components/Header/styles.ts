@@ -19,6 +19,7 @@ export const HeaderContainer = styled.header`
 
 export const LinkBox = styled.div`
   display: flex;
+
 `;
 
 export const HeaderGrade = styled.div`
@@ -26,6 +27,10 @@ export const HeaderGrade = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media(max-width: 1050px){
+    display:none;
+  }
 
   button {
     background-color: transparent;
@@ -77,3 +82,12 @@ export const IconContainer = styled.div`
     border-radius: 50%;
   }
 `;
+
+
+
+export const ContentMenu = styled.div`
+
+`
+
+
+
