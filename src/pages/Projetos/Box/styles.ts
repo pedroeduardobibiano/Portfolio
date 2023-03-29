@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const ProjetosContainer = styled.div`
   max-width: 1450px;
   margin: 0 auto 4rem auto;
+
+  @media (max-width: 440px) {
+    margin: 0;
+  }
 `;
 
 export const ContentBoxes = styled.div`
@@ -16,10 +20,12 @@ export const ContentBoxes = styled.div`
 `;
 
 export const Boxes = styled.div`
-  width: 37rem;
+  max-width: 37rem;
   height: 39rem;
 
   h3 {
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 2.5rem;
     font-weight: normal;
 
@@ -27,22 +33,37 @@ export const Boxes = styled.div`
 
     animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
+
+    @media (max-width: 440px) {
+      font-size: 1.1rem;
+
+    }
   }
 
   p {
-    margin-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-weight: normal;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     font-weight: 400;
-    color:${({theme}) => theme.colors["Fonte-F1"]};
+    color: ${({ theme }) => theme.colors["Fonte-F1"]};
 
     animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
+  
+    @media (max-width: 440px) {
+      font-size: 0.8rem;
+      width: 20rem;
+
+    }
   }
 
   span {
     display: flex;
-    margin-top: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-weight: normal;
     font-size: 0.92rem;
 
@@ -52,10 +73,19 @@ export const Boxes = styled.div`
 
     animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
+  
+  
+    @media (max-width: 440px) {
+      font-size: 0.8rem;
+      width: 20rem;
+
+    }
   }
 `;
 
 export const Imagens = styled.div`
+  margin-left: 3rem;
+  margin-right: 3rem;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   box-shadow: rgba(112, 181, 232, 0.1) -5px 5px,
@@ -72,7 +102,6 @@ export const Imagens = styled.div`
     transition: 1s;
     transform: scale(1.02);
   }
-
   border-radius: 5px;
   img {
     width: 100%;
@@ -80,35 +109,61 @@ export const Imagens = styled.div`
     border-radius: 5px;
     opacity: 0.85;
   }
+
+  @media (max-width: 450px) {
+    margin-left: 3rem;
+    margin-right: 6rem;
+    width: 15rem;
+    height: 8rem;
+    img {
+      width: 100%;
+      height: 8rem;
+      border-radius: 5px;
+      opacity: 0.85;
+    }
+  }
 `;
 
 export const ButtonsMainPr = styled.div`
+
   margin-top: 2rem;
   display: flex;
-  width: 22rem;
-  gap: 3rem;
+  gap: 1rem;
   height: 3rem;
 
   justify-content: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  max-width: 525px;
+  margin: 2rem auto;
 
   cursor: pointer;
 
   animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 3s; /* don't forget to set a duration! */
+
+  @media (max-width: 1376px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
+  @media (max-width: 440px) {
+      flex-direction:column;
+      height: 8rem;
+      align-items: flex-start;
+    }
 `;
 
 interface PropsVariant {
   variant: "azul" | "amarelo";
 }
 export const ButtonsContainerPr = styled.div<PropsVariant>`
-
-
-svg{
-display:flex;
-margin-left: 0.8rem;
-}
+  width: 10rem;
+  svg {
+    display: flex;
+    margin-left: 0.8rem;
+  }
 
   a {
     color: inherit;
@@ -123,15 +178,11 @@ margin-left: 0.8rem;
   gap: 0.3rem;
 
   :hover {
-    background-color: ${({theme}) => theme.colors["hover-bg"]};
+    background-color: ${({ theme }) => theme.colors["hover-bg"]};
     transition: 0.8s;
   }
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 12rem;
+  width: 10rem;
   height: 3.2rem;
 
   border: none;

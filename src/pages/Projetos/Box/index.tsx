@@ -29,9 +29,11 @@ export function BoxCard({ project }: ProjectsProps) {
     <ProjetosContainer>
       <ContentBoxes>
         <Boxes>
-          <Imagens>
+          <a href={project.linkProject} target="_blank">
+          <Imagens >
             <img src={`/screenshot/${project.img}`} />
           </Imagens>
+          </a>
           <h3>{project.titulo}</h3>
           <p>{project.descrição}</p>
           <span>Tenologias usadas neste projeto: {project.tecnologia}</span>

@@ -48,7 +48,7 @@ export const ThemeBar = styled.div`
   }
 
   svg {
-    color: ${(props) => props.theme.colors["Background-N2"]}; 
+    color: ${(props) => props.theme.colors["Fonte-F1"]}; 
     }
 `;
 // export const ThemeBar = styled.div`
