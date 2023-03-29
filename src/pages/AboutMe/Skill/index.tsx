@@ -144,30 +144,30 @@ export function Skill() {
         <TitleGlob>Habilidade</TitleGlob>
         <TecContent>
           <ContentButton>
-            <button onMouseOver={handleClickHtml} onMouseOut={HandleSetContent}>
+            <button onClick={handleClickHtml} >
               <img src={html} alt="" />
             </button>
 
-            <button onMouseOver={handleClickCss} onMouseOut={HandleSetContent}>
+            <button onClick={handleClickCss} >
               <img src={css} alt="" />
             </button>
 
-            <button onMouseOver={handleClickJS} onMouseOut={HandleSetContent}>
+            <button onClick={handleClickJS} >
               <img src={javascript} alt="" />
             </button>
 
             <button
-              onMouseOver={handleClickReact}
-              onMouseOut={HandleSetContent}
+              onClick={handleClickReact}
+              
             >
               <img src={react} alt="" />
             </button>
 
-            <button onMouseOver={handleClickJTS} onMouseOut={HandleSetContent}>
+            <button onClick={handleClickJTS} >
               <img src={typescript} alt="" />
             </button>
 
-            <button onMouseOver={handleClickGit} onMouseOut={HandleSetContent}>
+            <button onClick={handleClickGit}>
               <img src={Git} alt="" />
             </button>
           </ContentButton>
@@ -176,7 +176,7 @@ export function Skill() {
       <TextsContent>
         <Title>
           {task == undefined || task == "" ? (
-            <TitleNoPointer>{`Passe o mouse por cima de alguma Habilidade ao lado para ter uma descrição`}</TitleNoPointer>
+            <TitleNoPointer>{`clique em alguma Habilidade ao lado para ter uma descrição`}</TitleNoPointer>
           ) : (
             ""
           )}

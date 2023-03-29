@@ -97,7 +97,7 @@ export const SidebarNav = styled.div<{ sidebar: boolean }>`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 350ms;
+  transition: 800ms;
 `;
 
 export const NavIcon = styled.div`

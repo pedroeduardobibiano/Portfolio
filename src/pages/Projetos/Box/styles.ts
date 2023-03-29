@@ -33,7 +33,8 @@ export const Boxes = styled.div`
     margin-top: 2.5rem;
     font-weight: normal;
 
-    font-weight: 200;
+    font-weight: 400;
+    color:${({theme}) => theme.colors["Fonte-F1"]};
 
     animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
