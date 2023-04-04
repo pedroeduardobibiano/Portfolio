@@ -51,31 +51,7 @@ export const ThemeBar = styled.div`
     color: ${(props) => props.theme.colors["Fonte-F1"]}; 
     }
 `;
-// export const ThemeBar = styled.div`
-//   position: absolute;
 
-//   button {
-//     position: absolute;
-//     width: 3rem;
-//     height: 3rem;
-//     left: 5.5rem;
-//     top: -4.5rem;
-//     border-radius: 50%;
-//     border: 2px solid ${({ theme }) => theme.colors["Background-N1"]};
-//     background-color: ${(props) => props.theme.colors["Background-Theme"]};
-
-//     :hover {
-//       border: 2px solid ${({ theme }) => theme.colors.azul};
-//       transition: 0.6s;
-//     }
-//     svg {
-//       position: absolute;
-//       right: 0.55rem;
-//       top: 0.55rem;
-//       color: ${(props) => props.theme.colors["Fonte-F2"]};
-//     }
-//   }
-// `;
 
 export const Nav = styled.div`
   justify-content: flex-start;
@@ -97,7 +73,7 @@ export const SidebarNav = styled.div<{ sidebar: boolean }>`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 800ms;
+  transition: 350ms;
 `;
 
 export const NavIcon = styled.div`

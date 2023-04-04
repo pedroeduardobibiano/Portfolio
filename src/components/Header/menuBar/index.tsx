@@ -1,7 +1,14 @@
 import { X, List, Moon, Sun } from "phosphor-react";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { LinkBar, LinkBarContent, Nav, NavIcon, SidebarNav, ThemeBar } from "./styles";
+import {
+  LinkBar,
+  LinkBarContent,
+  Nav,
+  NavIcon,
+  SidebarNav,
+  ThemeBar,
+} from "./styles";
 
 interface PropsTheme {
   HandleChangeTheme: () => void;
@@ -12,6 +19,9 @@ export function MenuBar({ HandleChangeTheme, theme }: PropsTheme) {
   const [sidebar, setSidebar] = useState(false);
 
   function showSidebar() {
+    setSidebar(!sidebar);
+  }
+  function hideSidebara() {
     setSidebar(!sidebar);
   }
 
@@ -27,39 +37,38 @@ export function MenuBar({ HandleChangeTheme, theme }: PropsTheme) {
           <X />
         </NavIcon>
         <LinkBar>
-          <LinkBarContent>
+          <LinkBarContent onClick={hideSidebara}>
             <NavLink to={"/"}>Inicio</NavLink>
           </LinkBarContent>
 
-          <LinkBarContent>
+          <LinkBarContent onClick={hideSidebara}>
             <NavLink to="/AboutMe">Sobre mim</NavLink>
           </LinkBarContent>
 
-          <LinkBarContent>
+          <LinkBarContent onClick={hideSidebara}>
             <NavLink to="/Projeto">Projetos</NavLink>
           </LinkBarContent>
-<ThemeBar>
-
-          {theme == "light" && (
+          <ThemeBar>
+            {theme == "light" && (
               <button
-              onClick={() => HandleChangeTheme()}
-              title="Alternar modo Claro"
+                onClick={() => HandleChangeTheme()}
+                title="Alternar modo Claro"
               >
-            {" "}
-            <Moon size={26} weight="fill" />
-          </button>
-        )}
+                {" "}
+                <Moon size={26} weight="fill" />
+              </button>
+            )}
 
-        {theme == "dark" && (
-            <button
-            onClick={() => HandleChangeTheme()}
-            title="Alternar modo Escuro"
-            >
-            {" "}
-            <Sun size={26} weight="fill" />
-          </button>
-        )}
-        </ThemeBar>
+            {theme == "dark" && (
+              <button
+                onClick={() => HandleChangeTheme()}
+                title="Alternar modo Escuro"
+              >
+                {" "}
+                <Sun size={26} weight="fill" />
+              </button>
+            )}
+          </ThemeBar>
         </LinkBar>
       </SidebarNav>
     </>
