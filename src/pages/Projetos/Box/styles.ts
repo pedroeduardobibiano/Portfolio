@@ -17,11 +17,18 @@ export const ContentBoxes = styled.div`
 
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
+
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin-left: 1rem;
+
 `;
 
 export const Boxes = styled.div`
   max-width: 37rem;
   height: 39rem;
+  margin-bottom: 5rem;
 
   h3 {
     padding-left: 2rem;
@@ -36,7 +43,7 @@ export const Boxes = styled.div`
 
     @media (max-width: 440px) {
       font-size: 1.1rem;
-
+      margin-left: 2rem;
     }
   }
 

@@ -11,12 +11,31 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 2,
     img: "ToDo.png",
     titulo: "ToDo-Task",
-    descrição: "Este projeto se baseia em um 'task list', onde o usuário cria uma tarefa e controla o estado da mesma, podendo criar, excluir ou dar um check. As tarefas criadas ficam logo abaixo, e após dado o check elas ficam riscadas ao meio para fácil identificação, de qual tarefa já foi concluída.",
+    descrição:
+      "Este projeto se baseia em um 'task list', onde o usuário cria uma tarefa e controla o estado da mesma, podendo criar, excluir ou dar um check. As tarefas criadas ficam logo abaixo, e após dado o check elas ficam riscadas ao meio para fácil identificação, de qual tarefa já foi concluída.",
     tecnologia: "HTML, CSS, TypeScript, Styled-Componets",
     linkGit: "https://github.com/pedroeduardobibiano/ToDo-Task.git",
     linkProject: "https://front-todo.netlify.app/",
+  },
+  {
+    id: 3,
+    img: "construct.png",
+    titulo: "Coffe-Delivery",
+    descrição: "Projeto em andamento...",
+    tecnologia: "HTML, CSS, TypeScript, Styled-Componets, reducer",
+    linkGit: "https://construction-app-page.netlify.app/",
+    linkProject: "https://construction-app-page.netlify.app/",
+  },
+  {
+    id: 4,
+    img: "construct.png",
+    titulo: "Github Blog",
+    descrição: "Projeto em andamento...",
+    tecnologia: "Consumo de API(clientes HTTP), HTML, CSS, Styled-Componets, ",
+    linkGit: "https://construction-app-page.netlify.app/",
+    linkProject: "https://construction-app-page.netlify.app/",
   },
 ];
