@@ -1,28 +1,45 @@
-import { AboutMeContainer, ContentMain, ImgContent, TitleContent } from "./styles";
+import {
+  AboutMeContainer,
+  ContentMain,
+  ImgContent,
+  TitleContent,
+} from "./styles";
 
-import Imagem from '../../assets/Icons/Eu.png'
+import Imagem from "../../assets/Icons/Eu.png";
 import { Skill } from "./Skill";
-import {PaperPlaneTilt} from 'phosphor-react'
+import { PaperPlaneTilt } from "phosphor-react";
 
-import Curriculo from '../../assets/docs/Curriculo-2023.pdf'
+import Curriculo from "../../assets/docs/Curriculo-2023.pdf";
 
 export function AboutMe() {
-    return (
-        <ContentMain>
-            <AboutMeContainer>
-                <TitleContent>
-                    <h1>Pedro Eduardo</h1>
-                    <h4>Desenvolvedor front-end</h4>
-                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, consequuntur atque. Molestiae reprehenderit blanditiis itaque porro modi, amet aspernatur, eveniet veritatis esse eius reiciendis dicta sequi impedit culpa debitis atque.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque doloribus commodi debitis tempore, omnis adipisci nam? Cumque, alias fuga tenetur accusantium perspiciatis distinctio similique numquam, quidem blanditiis tempore repudiandae.
-                    </p>
-                    <a href={Curriculo} target="_blank"><button><PaperPlaneTilt size={23}/>  Curriculo</button></a>
+  return (
+    <ContentMain>
+      <AboutMeContainer>
+        <TitleContent>
+          <h1>Pedro Eduardo</h1>
+          <h4>Desenvolvedor front-end</h4>
+          <p>
+            {" "}
+            Desenvolvedor de software, com experiencia de atuação em diversos
+            projetos em ReactJs. Progressão de carreira fomentada em 2021.
+            Possuo como principal foco desenvolvimento com Javascript,
+            TypeScript, ReactJs, Bootstrap. Almejo a busca de conhecimento,
+            estou sempre aberto para aprender novas tecnologias, sempre pronto
+            para superar qualquer desafio! Se tivesse que me resumir em algumas
+            palavras, sem dúvidas seria: altruísta, ambicioso e sonhador!!!
+          </p>
+          <a href={Curriculo} target="_blank">
+            <button>
+              <PaperPlaneTilt size={23} /> Curriculo
+            </button>
+          </a>
+        </TitleContent>
+        <ImgContent>
+          <img src={Imagem} alt="" />
+        </ImgContent>
+      </AboutMeContainer>
 
-                </TitleContent>
-                <ImgContent><img src={Imagem} alt=""  /></ImgContent>
-            </AboutMeContainer>
-
-            <Skill />
-        </ContentMain>
-    )
+      <Skill />
+    </ContentMain>
+  );
 }
