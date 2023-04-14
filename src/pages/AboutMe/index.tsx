@@ -9,11 +9,11 @@ import Imagem from "../../assets/Icons/Eu.png";
 import { Skill } from "./Skill";
 import { PaperPlaneTilt } from "phosphor-react";
 
-import Curriculo from "../../assets/docs/Curriculo-2023.pdf";
+import Curriculo from "../../assets/docs/Curriculo-2023-atualizado.pdf";
 
 export function AboutMe() {
   return (
-    <ContentMain>
+    <ContentMain> 
       <AboutMeContainer>
         <TitleContent>
           <h1>Pedro Eduardo</h1>
@@ -25,8 +25,7 @@ export function AboutMe() {
             Possuo como principal foco desenvolvimento com Javascript,
             TypeScript, ReactJs, Bootstrap. Almejo a busca de conhecimento,
             estou sempre aberto para aprender novas tecnologias, sempre pronto
-            para superar qualquer desafio! Se tivesse que me resumir em algumas
-            palavras, sem dúvidas seria: altruísta, ambicioso e sonhador!!!
+            para superar qualquer desafio!
           </p>
           <a href={Curriculo} target="_blank">
             <button>
