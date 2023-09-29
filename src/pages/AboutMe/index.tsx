@@ -9,7 +9,7 @@ import Imagem from "../../assets/Icons/Eu.png";
 import { Skill } from "./Skill";
 import { PaperPlaneTilt } from "phosphor-react";
 
-import Curriculo from "../../assets/docs/Curriculo-2023-atualizado.pdf";
+import Curriculo from "../../assets/docs/CV.pdf";
 
 export function AboutMe() {
   return (
