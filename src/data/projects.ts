@@ -22,19 +22,42 @@ export const projects = [
   },
   {
     id: 3,
-    img: "construct.png",
+    img: "CoffeDl.jpg",
     titulo: "Coffe-Delivery",
-    descrição: "Projeto em andamento...",
-    tecnologia: "HTML, CSS, TypeScript, Styled-Componets, reducer",
-    linkGit: "https://construction-app-page.netlify.app/",
-    linkProject: "https://construction-app-page.netlify.app/",
+    descrição:
+      "A aplicação conta com 3 telas sendo a primeira uma tela de apresentação e também de listagem dos cafés disponíveis. Na segunda tela, o usuário precisa preencher um formulário com seus dados de endereço e ao lado direito é possível visualizar os itens do carrinho, podendo alterar a quantidade ou remover o mesmo. Na terceira e última tela, é exibido uma confirmação do pedido e também os detalhes de entrega da compra.",
+    tecnologia:
+      "HTML, CSS, TypeScript, Styled-Componets, ContextAPI, LocalStorage, React Hook Form, Zod",
+    linkGit: "https://github.com/pedroeduardobibiano/Coffe-Delivery",
+    linkProject: "https://coffeedelivery-cff.netlify.app/",
   },
+
   {
     id: 4,
-    img: "construct.png",
+    img: "gitblog.jpg",
     titulo: "Github Blog",
-    descrição: "Projeto em andamento...",
-    tecnologia: "Consumo de API(clientes HTTP), HTML, CSS, Styled-Componets, ",
+    descrição: "Uma aplicação que utiliza a API do GitHub para buscar issues de um repositório, dados do perfil e exibir elas como um blog.",
+    tecnologia: "HTML, CSS, TypeScript, Styled-Componets, API do Github, Axios, React Hook Form",
+    linkGit: "https://github.com/pedroeduardobibiano/GitBlog",
+    linkProject: "https://gitblog-bg.netlify.app/",
+  },
+
+  {
+    id: 5,
+    img: "shop.jpg",
+    titulo: "Ignite-Shop",
+    descrição: "Em andamento...",
+    tecnologia: "HTML, CSS, TypeScript, Next, Stitches, Radix, Stripe",
+    linkGit: "https://github.com/pedroeduardobibiano/Shop",
+    linkProject: "https://construction-app-page.netlify.app/",
+  },
+
+  {
+    id: 6,
+    img: "construct.png",
+    titulo: "Em andamento...",
+    descrição: "Em andamento...",
+    tecnologia: "Tecnologias sendo decididas para o projeto que atualmente se encontra em desenvolvimento",
     linkGit: "https://construction-app-page.netlify.app/",
     linkProject: "https://construction-app-page.netlify.app/",
   },
