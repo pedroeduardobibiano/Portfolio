@@ -14,8 +14,6 @@ import react from "../../assets/Icons/react.svg";
 import typescript from "../../assets/Icons/typescript.svg";
 
 import { Sun, Moon } from "phosphor-react";
-
-import { useState } from "react";
 import { MenuBar } from "./menuBar";
 
 interface PropsTheme {

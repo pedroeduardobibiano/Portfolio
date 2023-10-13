@@ -36,28 +36,33 @@ export const projects = [
     id: 4,
     img: "gitblog.jpg",
     titulo: "Github Blog",
-    descrição: "Uma aplicação que utiliza a API do GitHub para buscar issues de um repositório, dados do perfil e exibir elas como um blog.",
-    tecnologia: "HTML, CSS, TypeScript, Styled-Componets, API do Github, Axios, React Hook Form",
+    descrição:
+      "Uma aplicação que utiliza a API do GitHub para buscar issues de um repositório, dados do perfil e exibir elas como um blog.",
+    tecnologia:
+      "HTML, CSS, TypeScript, Styled-Componets, API do Github, Axios, React Hook Form",
     linkGit: "https://github.com/pedroeduardobibiano/GitBlog",
     linkProject: "https://gitblog-bg.netlify.app/",
   },
 
   {
-    id: 5,
+    id: 6,
     img: "shop.jpg",
     titulo: "Ignite-Shop",
-    descrição: "Em andamento...",
-    tecnologia: "HTML, CSS, TypeScript, Next, Stitches, Radix, Stripe",
+    descrição:
+      "Uma aplicação e-commerce de compra de camisetas, usando a SDK stripe para chamada dos objetos em tela",
+    tecnologia:
+      "HTML, StitchesJS, TypeScript, Next.js, Stitches, Radix, SSG, SSR, stripe",
     linkGit: "https://github.com/pedroeduardobibiano/Shop",
-    linkProject: "https://construction-app-page.netlify.app/",
+    linkProject: "https://shop-lbt8.vercel.app/",
   },
 
   {
     id: 6,
     img: "construct.png",
-    titulo: "Em andamento...",
-    descrição: "Em andamento...",
-    tecnologia: "Tecnologias sendo decididas para o projeto que atualmente se encontra em desenvolvimento",
+    titulo: "Designe System",
+    descrição: "Criação de um Designe System.",
+    tecnologia:
+      "Tecnologias sendo decididas para o projeto que atualmente se encontra em desenvolvimento",
     linkGit: "https://construction-app-page.netlify.app/",
     linkProject: "https://construction-app-page.netlify.app/",
   },
