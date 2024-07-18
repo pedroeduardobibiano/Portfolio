@@ -21,6 +21,7 @@ import Git from "../../../assets/Icons/Gitxp.svg";
 import "animate.css";
 
 export const data = [
+  {},
   {
     id: 1,
     TecnologiaHTML: "HTML",
