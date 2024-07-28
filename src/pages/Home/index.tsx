@@ -12,7 +12,7 @@ export function Home() {
                 <Titles>
                     <Title>OLÁ, EU SOU</Title>
                     <NameTitle>PEDRO EDUARDO</NameTitle>
-                    <Description>DESENVOLVEDOR FRONT-END</Description>
+                    <Description>DESENVOLVEDOR BACK-END</Description>
                 </Titles>
 
                 <ButtonsMain>

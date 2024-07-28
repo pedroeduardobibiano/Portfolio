@@ -8,10 +8,10 @@ import {
 
 import { NavLink } from "react-router-dom";
 
+import bd from "../../assets/Icons/bd.gif";
+import spring from "../../assets/Icons/spring.svg";
+import java from "../../assets/Icons/java.gif";
 import git from "../../assets/Icons/github.gif";
-import javascript from "../../assets/Icons/javascript.gif";
-import react from "../../assets/Icons/react.svg";
-import typescript from "../../assets/Icons/typescript.svg";
 
 import { Sun, Moon } from "phosphor-react";
 import { MenuBar } from "./menuBar";
@@ -27,10 +27,10 @@ export function Header({ HandleChangeTheme, theme}: PropsTheme) {
     <HeaderContainer>
       <HeaderGrade>
         <IconContainer>
+        <img src={bd} alt="" />
+        <img src={spring} alt="" />
           <img src={git} alt="" />
-          <img src={javascript} alt="" />
-          <img src={react} alt="" />
-          <img src={typescript} alt="" />
+          <img src={java} alt="" />
         </IconContainer>
         <LinkBox>
           <LinkContainer>

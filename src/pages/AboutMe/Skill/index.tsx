@@ -11,12 +11,10 @@ import {
   TitleNoPointer,
 } from "./styles";
 
-import javascript from "../../../assets/Icons/javascript.svg";
-import html from "../../../assets/Icons/html.svg";
-import css from "../../../assets/Icons/css.svg";
-import typescript from "../../../assets/Icons/typescript.svg";
-import react from "../../../assets/Icons/react.svg";
-import Git from "../../../assets/Icons/Gitxp.svg";
+import bd from "../../../assets/Icons/banco-img.png";
+import java from "../../../assets/Icons/java-img.svg";
+import spring from "../../../assets/Icons/spring.svg";
+import git from "../../../assets/Icons/git-img.svg";
 
 import "animate.css";
 
@@ -24,107 +22,72 @@ export const data = [
   {},
   {
     id: 1,
-    TecnologiaHTML: "HTML",
-    textoHTML:
-      "HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.",
+    TecnologiaJava: "Java",
+    textoJava:
+      "Java é uma linguagem de programação orientada a objetos e uma plataforma de computação que permite a criação de software robusto, seguro e portável.",
   },
   {
     id: 2,
-    TecnologiaCSS: "CSS",
-    textoCSS:
-      "Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>",
+    TecnologiaSpring: "Spring Boot",
+    textoSpring:
+      "Spring Boot é um framework baseado no Spring, que facilita a criação de aplicações Java standalone e prontas para produção.",
   },
   {
     id: 3,
-    TecnologiaJavaScript: "JavaScript",
-    textoJavaScript:
-      "JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web ",
+    TecnologiaBd: "Banco de dados",
+    textoBd:
+      "Um banco de dados é um sistema organizado para armazenar, gerenciar e recuperar informações de forma eficiente. Ele é usado para manter dados estruturados, facilitando o acesso, a manipulação e a atualização dessas informações.",
   },
   {
     id: 4,
-    TecnologiaReactJS: "ReactJS",
-    textoReactJS:
-      "O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web ",
-  },
-  {
-    id: 5,
-    TecnologiaTypeScript: "TypeScript",
-    textoTypeScript:
-      "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem. ",
-  },
-  {
-    id: 6,
     TecnologiaGit: "GitHub",
     textoGit:
-      "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.",
+      "GitHub é uma plataforma de hospedagem de código-fonte e controle de versão que permite a colaboração entre desenvolvedores. Ele é baseado no sistema de controle de versão Git e fornece ferramentas para gerenciar projetos de software.",
   },
+ 
 ];
 
 export function Skill() {
   const [task, setTask] = useState<ReactNode>();
 
-  function handleClickHtml() {
-    const textFillHtml = data.map((search) => {
+  function handleClickJava() {
+    const textFillJava = data.map((search) => {
       return (
         <SubTitle>
-          <h1>{search.TecnologiaHTML}</h1>
-          <h3>{search.textoHTML}</h3>
+          <h1>{search.TecnologiaJava}</h1>
+          <h3>{search.textoJava}</h3>
         </SubTitle>
       );
     });
-    setTask(textFillHtml);
+    setTask(textFillJava);
   }
 
-  function handleClickCss() {
-    const textFillCss = data.map((search) => {
+  function handleClickSpring() {
+    const textFillSpring = data.map((search) => {
       return (
         <SubTitle>
-          <h1>{search.TecnologiaCSS}</h1>
-          <h3>{search.textoCSS}</h3>
+          <h1>{search.TecnologiaSpring}</h1>
+          <h3>{search.textoSpring}</h3>
         </SubTitle>
       );
     });
-    setTask(textFillCss);
+    setTask(textFillSpring);
   }
 
-  function handleClickJS() {
-    const textFillJS = data.map((search) => {
+  function handleClickDB() {
+    const textFillDB = data.map((search) => {
       return (
         <SubTitle>
-          <h1>{search.TecnologiaJavaScript}</h1>
-          <h3>{search.textoJavaScript}</h3>
+          <h1>{search.TecnologiaBd}</h1>
+          <h3>{search.textoBd}</h3>
         </SubTitle>
       );
     });
-    setTask(textFillJS);
-  }
-
-  function handleClickReact() {
-    const textFillReact = data.map((search) => {
-      return (
-        <SubTitle>
-          <h1>{search.TecnologiaReactJS}</h1>
-          <h3>{search.textoReactJS}</h3>
-        </SubTitle>
-      );
-    });
-    setTask(textFillReact);
-  }
-
-  function handleClickJTS() {
-    const textFillTS = data.map((search) => {
-      return (
-        <SubTitle>
-          <h1>{search.TecnologiaTypeScript}</h1>
-          <h3>{search.textoTypeScript}</h3>
-        </SubTitle>
-      );
-    });
-    setTask(textFillTS);
+    setTask(textFillDB);
   }
 
   function handleClickGit() {
-    const textFillTS = data.map((search) => {
+    const textFillGit = data.map((search) => {
       return (
         <SubTitle>
           <h1>{search.TecnologiaGit}</h1>
@@ -132,12 +95,10 @@ export function Skill() {
         </SubTitle>
       );
     });
-    setTask(textFillTS);
+    setTask(textFillGit);
   }
 
-  function HandleSetContent() {
-    setTask("");
-  }
+
 
   return (
     <HabilitsContent>
@@ -145,32 +106,22 @@ export function Skill() {
         <TitleGlob>Habilidade</TitleGlob>
         <TecContent>
           <ContentButton>
-            <button onClick={handleClickHtml} >
-              <img src={html} alt="" />
+            <button onClick={handleClickJava} >
+              <img src={java} alt="" />
             </button>
 
-            <button onClick={handleClickCss} >
-              <img src={css} alt="" />
+            <button onClick={handleClickSpring} >
+              <img src={spring} alt="" />
             </button>
 
-            <button onClick={handleClickJS} >
-              <img src={javascript} alt="" />
+            <button onClick={handleClickDB} >
+              <img src={bd} alt="" />
             </button>
 
-            <button
-              onClick={handleClickReact}
-              
-            >
-              <img src={react} alt="" />
+            <button onClick={handleClickGit} >
+              <img src={git} alt="" />
             </button>
 
-            <button onClick={handleClickJTS} >
-              <img src={typescript} alt="" />
-            </button>
-
-            <button onClick={handleClickGit}>
-              <img src={Git} alt="" />
-            </button>
           </ContentButton>
         </TecContent>
       </SkillContent>

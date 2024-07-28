@@ -17,15 +17,11 @@ export function AboutMe() {
       <AboutMeContainer>
         <TitleContent>
           <h1>Pedro Eduardo</h1>
-          <h4>Desenvolvedor front-end</h4>
+          <h4>Desenvolvedor back-end</h4>
           <p>
             {" "}
-            Desenvolvedor de software, com experiencia de atuação em diversos
-            projetos em ReactJs. Progressão de carreira fomentada em 2021.
-            Possuo como principal foco desenvolvimento com Javascript,
-            TypeScript, ReactJs, Bootstrap. Almejo a busca de conhecimento,
-            estou sempre aberto para aprender novas tecnologias, sempre pronto
-            para superar qualquer desafio!
+            Desenvolvedor back-end, com conhecimento abrangente na área e uma sólida base de projetos
+            já implementados e hospedados.
           </p>
           <a href={Curriculo} target="_blank">
             <button>

@@ -107,13 +107,9 @@ export const SkillContent = styled.div``;
 
 export const ContentButton = styled.div`
   display: flex;
-  justify-content: space-between;
-
+  gap: 2.5rem;
   padding: 1rem;
-
   width: 100%;
-
-  align-items: flex-start;
 
 
 
@@ -142,11 +138,13 @@ export const ContentButton = styled.div`
   button {
     width: 5rem;
     height: 4rem;
-    border-radius: 50%;
-    border: 2px solid ${({theme}) =>theme.colors["bg-Menu"]};
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border: none;
+
+
 
     background-color: transparent;
 
@@ -162,6 +160,7 @@ export const ContentButton = styled.div`
       transition: 0.8s;
       img {
         width: 3.3rem;
+        
       }
     }
   }
