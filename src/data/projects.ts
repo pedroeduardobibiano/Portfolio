@@ -1,4 +1,26 @@
 export const projects = [
+  {
+    id: 1,
+    img: "back-end-page.png",
+    titulo: "Xadrez",
+    descrição:
+      "aplicações de conceitos raiz, interface, matriz, tratamento de exceções, enumeração, composição , 4 pilares da programação, entre outros conceitos.",
+    tecnologia:
+      "Java Puro",
+    linkGit: "https://github.com/pedroeduardobibiano/chess_system_java",
+    linkProject: "https://github.com/pedroeduardobibiano/chess_system_java",
+  },
+
+  {
+    id: 2,
+    img: "back-end-page.png",
+    titulo: "Web services com Spring Boot e JPA / Hibernate",
+    descrição: "Desenvolvimento de um projeto em Spring Boot com implementação de modelo de domínio baseado em um cadastro com pedidos de produtos e ordem de pagamento",
+    tecnologia:
+      "Java 11+, Spring Boot, H2, JPA, tratamento de exceção, PostgreSQL, Heroku",
+    linkGit: "https://github.com/pedroeduardobibiano/workshop-springboot3-jpa",
+    linkProject: "https://github.com/pedroeduardobibiano/workshop-springboot3-jpa",
+  },
 
   {
     id: 3,
@@ -12,20 +34,9 @@ export const projects = [
     linkProject: "https://coffeedelivery-cff.netlify.app/",
   },
 
-  {
-    id: 4,
-    img: "gitblog.jpg",
-    titulo: "Github Blog",
-    descrição:
-      "Uma aplicação que utiliza a API do GitHub para buscar issues de um repositório, dados do perfil e exibir elas como um blog.",
-    tecnologia:
-      "HTML, CSS, TypeScript, Styled-Componets, API do Github, Axios, React Hook Form",
-    linkGit: "https://github.com/pedroeduardobibiano/GitBlog",
-    linkProject: "https://gitblog-bg.netlify.app/",
-  },
 
   {
-    id: 6,
+    id: 4,
     img: "shop.jpg",
     titulo: "Ignite-Shop",
     descrição:
@@ -36,14 +47,5 @@ export const projects = [
     linkProject: "https://shop-lbt8.vercel.app/",
   },
 
-  {
-    id: 6,
-    img: "construct.png",
-    titulo: "Designe System",
-    descrição: "Criação de um Designe System.",
-    tecnologia:
-      "Tecnologias sendo decididas para o projeto que atualmente se encontra em desenvolvimento",
-    linkGit: "https://construction-app-page.netlify.app/",
-    linkProject: "https://construction-app-page.netlify.app/",
-  },
+ 
 ];
