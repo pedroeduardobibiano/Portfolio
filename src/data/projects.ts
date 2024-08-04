@@ -2,13 +2,13 @@ export const projects = [
   {
     id: 1,
     img: "back-end-page.png",
-    titulo: "Xadrez",
+    titulo: "Projeto: API Restful com Spring Boot e banco MongoDB (web services + NoSQL)",
     descrição:
-      "aplicações de conceitos raiz, interface, matriz, tratamento de exceções, enumeração, composição , 4 pilares da programação, entre outros conceitos.",
+      "Projeto completo feito em Java + Spring Boot, utilizando as principais implementações dentro de uma aplicação Java.",
     tecnologia:
-      "Java Puro",
-    linkGit: "https://github.com/pedroeduardobibiano/chess_system_java",
-    linkProject: "https://github.com/pedroeduardobibiano/chess_system_java",
+      "Java 11+, Spring Boot, MongoDB, tratamento de exceção personalizadas, ApiRest, padrão DTO",
+    linkGit: "https://github.com/pedroeduardobibiano/workshop-spring-boot-mongodb",
+    linkProject: "https://github.com/pedroeduardobibiano/workshop-spring-boot-mongodb",
   },
 
   {
@@ -24,6 +24,18 @@ export const projects = [
 
   {
     id: 3,
+    img: "back-end-page.png",
+    titulo: "Xadrez",
+    descrição:
+      "Aplicações de conceitos raiz, interface, matriz, tratamento de exceções, enumeração, composição , 4 pilares da programação, entre outros conceitos.",
+    tecnologia:
+      "Java Puro",
+    linkGit: "https://github.com/pedroeduardobibiano/chess_system_java",
+    linkProject: "https://github.com/pedroeduardobibiano/chess_system_java",
+  },
+
+  {
+    id: 4,
     img: "CoffeDl.jpg",
     titulo: "Coffe-Delivery",
     descrição:
@@ -36,7 +48,7 @@ export const projects = [
 
 
   {
-    id: 4,
+    id: 5,
     img: "shop.jpg",
     titulo: "Ignite-Shop",
     descrição:
