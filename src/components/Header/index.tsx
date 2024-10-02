@@ -1,17 +1,12 @@
 import {
   HeaderContainer,
   HeaderGrade,
-  IconContainer,
   LinkBox,
   LinkContainer,
 } from "./styles";
 
 import { NavLink } from "react-router-dom";
 
-import bd from "../../assets/Icons/bd.gif";
-import spring from "../../assets/Icons/spring.svg";
-import java from "../../assets/Icons/java.gif";
-import git from "../../assets/Icons/github.gif";
 
 import { Sun, Moon } from "phosphor-react";
 import { MenuBar } from "./menuBar";
@@ -26,12 +21,6 @@ export function Header({ HandleChangeTheme, theme}: PropsTheme) {
   return (
     <HeaderContainer>
       <HeaderGrade>
-        <IconContainer>
-        <img src={bd} alt="" />
-        <img src={spring} alt="" />
-          <img src={git} alt="" />
-          <img src={java} alt="" />
-        </IconContainer>
         <LinkBox>
           <LinkContainer>
             <NavLink to={"/"}>Inicio</NavLink>

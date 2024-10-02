@@ -19,6 +19,7 @@ export const HeaderContainer = styled.header`
 
 export const LinkBox = styled.div`
   display: flex;
+  width: 58rem;
 
 `;
 
@@ -51,7 +52,6 @@ export const HeaderGrade = styled.div`
 export const LinkContainer = styled.div`
   padding: 1.5rem 0.8rem;
   cursor: pointer;
-
   font-size: 1.1rem;
   border-bottom: 1px solid transparent;
 
@@ -73,21 +73,8 @@ export const LinkContainer = styled.div`
   }
 `;
 
-export const IconContainer = styled.div`
-  margin-left: 5rem;
-  gap: 1rem;
-  display: flex;
-
-  img {
-    border-radius: 50%;
-  }
-`;
 
 
-
-export const ContentMenu = styled.div`
-
-`
 
 
 

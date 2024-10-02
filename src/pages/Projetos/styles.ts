@@ -26,7 +26,7 @@ export const Title = styled.div`
   margin: 3rem auto 1rem auto;
   padding: 0.5rem;
 
-  @media (max-width: 1376px) {
+  @media (max-width: 1423px) {
     max-width: 580px;
     padding-left: 2rem;
   }
