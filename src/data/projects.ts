@@ -34,21 +34,9 @@ export const projects = [
     linkProject: "https://github.com/pedroeduardobibiano/chess_system_java",
   },
 
+
   {
     id: 4,
-    img: "CoffeDl.jpg",
-    titulo: "Coffe-Delivery",
-    descrição:
-      "A aplicação conta com 3 telas sendo a primeira uma tela de apresentação e também de listagem dos cafés disponíveis. Na segunda tela, o usuário precisa preencher um formulário com seus dados de endereço e ao lado direito é possível visualizar os itens do carrinho, podendo alterar a quantidade ou remover o mesmo. Na terceira e última tela, é exibido uma confirmação do pedido e também os detalhes de entrega da compra.",
-    tecnologia:
-      "HTML, CSS, TypeScript, Styled-Componets, ContextAPI, LocalStorage, React Hook Form, Zod",
-    linkGit: "https://github.com/pedroeduardobibiano/Coffe-Delivery",
-    linkProject: "https://coffeedelivery-cff.netlify.app/",
-  },
-
-
-  {
-    id: 5,
     img: "shop.jpg",
     titulo: "Ignite-Shop",
     descrição:

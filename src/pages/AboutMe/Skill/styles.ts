@@ -158,10 +158,7 @@ export const ContentButton = styled.div`
     &:hover {
       background-color: ${({ theme }) => theme.colors["hover-bg"]};
       transition: 0.8s;
-      img {
-        width: 3.3rem;
-        
-      }
+      
     }
   }
 `;
